@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Math and Date Objects</h1>
+    <input type="text" id="myInput" placeholder="Type something">
+<input type="text" id="box" onfocus="changeBlue()" onblur="changeRed()" placeholder="Enter text">
+
+
+<script>
+let box = document.getElementById("myInput");
+
+box.addEventListener("focus", function () {
+    box.style.background = "blue";
+});
+
+box.addEventListener("blur", function () {
+    box.style.background = "red";
+});
+
+
+function changeBlue() {
+    document.getElementById("box").style.background = "blue";
+}
+
+function changeRed() {
+    document.getElementById("box").style.background = "red";
+}
+</script>
+
+</body>
+</html>
